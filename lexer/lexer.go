@@ -23,14 +23,28 @@ func (l *Lexer) NextToken() token.Token {
 	l.skipWhitespace()
 
 	switch l.ch {
+	// Operators
 	case '=':
 		tokType = token.ASSIGN
+	case '+':
+		tokType = token.PLUS
+	case '-':
+		tokType = token.MINUS
+	case '!':
+		tokType = token.BANG
+	case '*':
+		tokType = token.ASTERISK
+	case '/':
+		tokType = token.SLASH
+	case '<':
+		tokType = token.LT
+	case '>':
+		tokType = token.GT
+
 	case ';':
 		tokType = token.SEMICOLON
 	case ',':
 		tokType = token.COMMA
-	case '+':
-		tokType = token.PLUS
 	case '(':
 		tokType = token.LPAREN
 	case ')':
