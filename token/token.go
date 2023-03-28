@@ -18,8 +18,10 @@ const (
 	ASTERISK TokenType = "*"
 	SLASH    TokenType = "/"
 
-	LT TokenType = "<"
-	GT TokenType = ">"
+	EQ  TokenType = "=="
+	NEQ TokenType = "!="
+	LT  TokenType = "<"
+	GT  TokenType = ">"
 
 	// Delimiters
 	COMMA     TokenType = ","
