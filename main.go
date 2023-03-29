@@ -1,7 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"monkey/repl"
+	"os"
+	"os/user"
+)
 
 func main() {
-	fmt.Println("lolkek")
+	user, err := user.Current()
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("Hello %s! This is Monkey language!\n", user.Username)
+	fmt.Println("Feel free to type in commands")
+
+	repl.Start(os.Stdin, os.Stdout)
 }

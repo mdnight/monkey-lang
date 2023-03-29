@@ -11,26 +11,26 @@ const (
 	INT   TokenType = "INT"
 
 	// Operators
-	ASSIGN   TokenType = "="
-	PLUS     TokenType = "+"
-	MINUS    TokenType = "-"
-	BANG     TokenType = "!"
-	ASTERISK TokenType = "*"
-	SLASH    TokenType = "/"
+	ASSIGN   TokenType = "ASSIGN"
+	PLUS     TokenType = "PLUS"
+	MINUS    TokenType = "MINUS"
+	BANG     TokenType = "BANG"
+	ASTERISK TokenType = "ASTERISK"
+	SLASH    TokenType = "SLASH"
 
-	EQ  TokenType = "=="
-	NEQ TokenType = "!="
-	LT  TokenType = "<"
-	GT  TokenType = ">"
+	EQ  TokenType = "EQ"
+	NEQ TokenType = "NEQ"
+	LT  TokenType = "LT"
+	GT  TokenType = "GT"
 
 	// Delimiters
-	COMMA     TokenType = ","
-	SEMICOLON TokenType = ";"
+	COMMA     TokenType = "COMMA"
+	SEMICOLON TokenType = "SEMICOLON"
 
-	LPAREN TokenType = "("
-	RPAREN TokenType = ")"
-	LBRACE TokenType = "{"
-	RBRACE TokenType = "}"
+	LPAREN TokenType = "LPAREN"
+	RPAREN TokenType = "RPAREN"
+	LBRACE TokenType = "LBRACE"
+	RBRACE TokenType = "RBRACE"
 
 	// Keywords
 	FUNCTION TokenType = "FUNCTION"
